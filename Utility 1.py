@@ -1,7 +1,6 @@
 import numpy as np
 import math
 
-
 def time_in_string_to_float(time):
     """Takes in time format in string datatype."""
     """Returns hours, minutes, seconds and hours/minutes in decimal format with int as datatype."""
@@ -11,8 +10,6 @@ def time_in_string_to_float(time):
     seconds = int(time[split_index + 4:])
     decimal_time = hours + minutes/60
     return hours, minutes, seconds, round(decimal_time, 1)
-
-#print(time_in_string_to_float('20:00:00'))
 
 def time_rounder(input_time):
     """Takes in time format in string datatype."""
@@ -35,8 +32,6 @@ def time_rounder(input_time):
     decimal_format = input_hour + (input_minute/60)
 
     return input_hour, input_minute, input_seconds, decimal_format
-
-#print(time_rounder('20:47:00'))
 
 def selector(list_name):
     """Takes in list of values."""
@@ -66,8 +61,6 @@ def selector(list_name):
     alt_highlighters = pos_highlighters + neg_highlighters
     
     return alt_highlighters
-
-#print(selector([1,2,4,6,10,19]))
 
 def selector_Dict(input_dict):
     """Takes in a dictionary with keys and values."""
@@ -121,8 +114,6 @@ def increase_decrease_test(real_number):
 
     return output_list
 
-#print(increase_decrease_test(-20))
-
 def Phraze(list_name):
     phraze_0 = ""
     for i in list_name:
@@ -143,8 +134,6 @@ def Phraze(list_name):
             else:
                 phraze_0 += "and {}".format(i)
     return phraze_0
-
-#print(Phraze([1,2,4,5,6]))
 
 def dict_subtractor(dict_1,dict_2,demultiplier):
     """Works only when the keys of both the dictionaries are the same."""
