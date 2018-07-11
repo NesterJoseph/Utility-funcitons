@@ -111,6 +111,11 @@ def increase_decrease_test(real_number):
         number_test_2 = 'a decrease'
         number_test_3 = 'decreased'
         number_test_4 = 'lower'
+    if real_number == 0:
+        number_test_1 = 'flat'
+        number_test_2 = 'no change'
+        number_test_3 = 'static'
+        number_test_4 = 'stagnant'
 
     output_list = [number_test_1, number_test_2, number_test_3, number_test_4]
 
@@ -222,5 +227,4 @@ def number_to_dollars(value):
         dollar_value_with_sign = dollar_value
     
     return dollar_value_with_sign
-
 
