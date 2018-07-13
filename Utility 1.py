@@ -228,3 +228,17 @@ def number_to_dollars(value):
     
     return dollar_value_with_sign
 
+def comma_seperator(value): 
+    """ Returns Seperates value in indian comma format :param value - String to seperate with comma :return: Comma seperated String """ 
+    import re 
+    if "." in str(value): 
+        values = str(value).split(".") 
+        new_value = values[0] 
+    else: 
+        new_value = value 
+        comma_value = re.sub(r"(?<=\d)(?=(\d{2}){0,2}\d{3}(\d{7})*(?!\d))", ",", str(new_value)) 
+    
+    if "." in str(value): 
+        return comma_value + '.' + str(values[1]) 
+    else: 
+        return comma_value
