@@ -1,0 +1,11 @@
+## increase-decrease concept
+
+"""This concept is applied for 1 particular world entity.
+A single world entity can have multiple interest parameters.
+These interest parameters can range from ratings, sales, revenue etc(in general additive numbers).
+
+Data requirements - Have to have a minimum of 2 periods of data to compare. Within this period the crucial information 
+is the sentiment of the world entity.
+
+Then comes multiple layers of sentiment understanding.
+
