@@ -242,3 +242,23 @@ def comma_seperator(value):
         return comma_value + '.' + str(values[1]) 
     else: 
         return comma_value
+
+def suffix(num): 
+    ''' 
+    :param num: 
+    :return: 
+    ''' 
+    num = num % 100
+    print(num)
+    if num < 11 or num > 13: 
+        num = num % 10 
+        if num == 1: 
+            return 'st' 
+        elif num == 2: 
+            return 'nd' 
+        elif num == 3: 
+            return 'rd' 
+        else: 
+            return 'th' 
+    else: 
+        return 'th'
